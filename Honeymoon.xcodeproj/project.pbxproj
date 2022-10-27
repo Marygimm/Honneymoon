@@ -12,6 +12,7 @@
 		575E571B290A90F400A72408 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 575E571A290A90F400A72408 /* Assets.xcassets */; };
 		575E571E290A90F400A72408 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 575E571D290A90F400A72408 /* Preview Assets.xcassets */; };
 		575E5725290A91ED00A72408 /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 575E5724290A91ED00A72408 /* Sounds */; };
+		575E572A290A92F200A72408 /* HoneymoonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575E5729290A92F200A72408 /* HoneymoonModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +22,8 @@
 		575E571A290A90F400A72408 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		575E571D290A90F400A72408 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		575E5724290A91ED00A72408 /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
-		575E5726290A920700A72408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		575E5726290A920700A72408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		575E5729290A92F200A72408 /* HoneymoonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneymoonModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,11 +56,12 @@
 		575E5715290A90F200A72408 /* Honeymoon */ = {
 			isa = PBXGroup;
 			children = (
-				575E5726290A920700A72408 /* Info.plist */,
-				575E5724290A91ED00A72408 /* Sounds */,
 				575E5716290A90F200A72408 /* HoneymoonApp.swift */,
-				575E5718290A90F200A72408 /* ContentView.swift */,
+				575E5728290A92E100A72408 /* Model */,
+				575E5724290A91ED00A72408 /* Sounds */,
+				575E5727290A92BA00A72408 /* Views */,
 				575E571A290A90F400A72408 /* Assets.xcassets */,
+				575E5726290A920700A72408 /* Info.plist */,
 				575E571C290A90F400A72408 /* Preview Content */,
 			);
 			path = Honeymoon;
@@ -70,6 +73,22 @@
 				575E571D290A90F400A72408 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		575E5727290A92BA00A72408 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				575E5718290A90F200A72408 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		575E5728290A92E100A72408 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				575E5729290A92F200A72408 /* HoneymoonModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				575E572A290A92F200A72408 /* HoneymoonModel.swift in Sources */,
 				575E5719290A90F200A72408 /* ContentView.swift in Sources */,
 				575E5717290A90F200A72408 /* HoneymoonApp.swift in Sources */,
 			);
